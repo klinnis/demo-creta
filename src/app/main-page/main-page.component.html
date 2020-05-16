@@ -1,0 +1,52 @@
+<div class="test">
+<div class="container">
+  <div class="row searchbar">
+    <div style="width: 100%; margin-top: -39px; margin-left: -230px" class="d-flex flex-column  mb-3">
+        <div  class="p-2 bd-highlight"><h1 style="text-align: start">Παγκρήτιος</h1></div>
+      <div  class="p-2 bd-highlight"><h2>Οδηγός Αγοράς</h2></div>
+    </div>
+<div class="row">
+    <div class="col-sm-4">
+        <mat-form-field>
+          <mat-label >Ψάχνω για...</mat-label>
+          <mat-select>
+            <mat-option *ngFor="let category of categories" [value]="category.value">
+              {{category.viewValue}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <div class="col-sm-4">
+        <mat-form-field >
+          <mat-label>Λέξη κλειδί</mat-label>
+          <input matInput placeholder="Παράδειγμα: Υγεία...">
+        </mat-form-field>
+      </div>
+      <div class="col-sm-4">
+        <button style="margin-top: 10px; font-weight: bold" type="button" class="btn btn-warning koumpi">Αναζήτηση</button>
+      </div>
+    </div>
+</div>
+
+
+</div>
+
+  <div class="row kartes">
+    <div class="col-sm-4">
+      <mat-card >
+        <img src="/assets/mineta.jpg"/>
+      </mat-card>
+    </div>
+    <div class="col-sm-4">
+      <mat-card>
+        <img class="img-fluid" src="/assets/kastino.jpg"/>
+      </mat-card>
+    </div>
+    <div class="col-sm-4">
+      <mat-card>
+        <img class="img-fluid" src="/assets/interlife.png"/>
+      </mat-card>
+    </div>
+  </div>
+  </div>
+

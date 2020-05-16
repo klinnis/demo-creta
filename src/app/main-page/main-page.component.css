@@ -1,0 +1,167 @@
+.container {
+  margin-top: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+  padding: 0;
+
+}
+
+.test {
+  display: grid;
+  height: 100%;
+  margin-top: -70px;
+  background:linear-gradient(0deg, rgba(10, 0, 0, 0.4), rgba(10, 0, 0, 0.4)), url('/assets/people.jpg');
+  background-size:cover;
+}
+
+@media only screen and (max-width: 768px) {
+  .test {
+    height: 100%;
+  }
+  body,html {
+    height: 100%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 993px) {
+  .mat-card img {
+    /*this makes the image in src fit to the size specified below*/
+    width: 80%; /* Here you can use wherever you want to specify the width and also the height of the <img>*/
+    margin-left: 20px !important;
+    border: 3px solid red;
+
+  }
+}
+
+.mat-card {
+  width: 70%;
+  border: 2px solid dodgerblue;
+  margin-bottom: 10px;
+  margin-left:auto;
+  margin-right:auto;
+  background-color: transparent;
+  border-radius: 10px;
+}
+.mat-card img {
+ /*this makes the image in src fit to the size specified below*/
+  width: 80%; /* Here you can use wherever you want to specify the width and also the height of the <img>*/
+  margin-left: 35px;
+  border: 3px solid yellow;
+
+}
+
+.mat-card:not([class*=mat-elevation-z]) {
+  box-shadow: 0 70px 80px -10px rgba(0,0,0,1),
+  0 0px 0px 0 rgba(0,0,0,1),
+  0 30px 30px 0 rgba(0,0,0,1);
+}
+
+.input-group-text {
+  background-color: red;
+}
+
+h3 {
+  color:white;
+  font-family: 'Droid serif', serif;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 44px;
+  margin: 0 0 12px;
+  text-align: center;
+}
+
+input {
+  width: 70%;
+}
+
+
+
+h1 {
+  font-size: 2.5rem;
+  color: dodgerblue;
+  font-family: 'Droid serif', serif;
+  font-weight: bold;
+  font-style: italic;
+  line-height: 50px;
+  margin: 0;
+  padding: 0;
+  text-align : center;
+  letter-spacing: 1.4px;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: dodgerblue;
+  font-family: 'Droid serif', serif;
+  font-weight: bold;
+  font-style: italic;
+  text-align : start;
+  margin: 0;
+  letter-spacing: 1.4px;
+
+}
+
+
+.searchbar {
+  border-right: 2px solid yellow;
+  border-top: 2px solid yellow;
+  border-bottom: 2px solid yellow;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-left: 12%;
+  margin-bottom: 20px;
+  padding-bottom: 7%;
+}
+
+mat-label {
+  color: dodgerblue;
+}
+
+input {
+  width: 100%;
+}
+
+.koumpi:hover {
+  background-color: darkblue;
+  border: 1px solid darkblue;
+}
+
+@media only screen and (max-width: 1295px) {
+ .searchbar {
+   margin-left: 18%;
+ }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 911px) {
+  .searchbar {
+    margin-left: 35%;
+  }
+}
+
+@media only screen and (min-width: 722px) and (max-width: 767px) {
+  .searchbar {
+    margin-left: 25%;
+  }
+
+  .mat-card img {
+    margin-left: 15px;
+  }
+}
+
+@media only screen and (min-width: 240px) and (max-width: 721px) {
+  .searchbar {
+    margin-left: 36%;
+    border:none;
+  }
+
+  h1,h2 {
+    margin-left: 50%;
+  }
+
+  .mat-card img {
+    margin-left: 15px;
+  }
+}
+
+

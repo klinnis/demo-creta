@@ -1,0 +1,58 @@
+<nav class="navbar navbar-expand-lg ">
+  <img src="/assets/creta.png" class="form-control creta" alt="Responsive image">
+  <button (click)="toggler()" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#check" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="material-icons" style="font-size: 2.5rem; color:white;">
+list
+</span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <span class="space"></span>
+    <div class="container-2">
+      <div class="btn btn-two" routerLink="/registration">
+        Καταχώρηση
+      </div>
+    </div>
+    <div class="container-2">
+      <div class="btn btn-two" routerLink="/visitcreta">
+        <span>VisitCreta.gr</span>
+      </div>
+    </div>
+    <div class="container-2">
+      <div class="btn btn-two" routerLink="/creta">
+        <span>Creta.gr</span>
+      </div>
+    </div>
+    <div class="container-2">
+      <div class="btn btn-two" routerLink="/contact">
+        <span>Επικοινωνία</span>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="clicked" class="collapse navbar-collapse" id="check">
+    <span class="space"></span>
+    <div class="container-2">
+      <div class="btn btn-two" routerLink="/registration" (click)="close()">
+        Καταχώρηση
+      </div>
+    </div>
+    <div class="container-2">
+      <div class="btn btn-two" routerLink="/visitcreta" (click)="close()">
+        <span>VisitCreta.gr</span>
+      </div>
+    </div>
+    <div class="container-2">
+      <div class="btn btn-two" routerLink="/creta" (click)="close()">
+        <span>Creta.gr</span>
+      </div>
+    </div>
+    <div class="container-2">
+      <div class="btn btn-two" routerLink="/contact" (click)="close()">
+        <span>Επικοινωνία</span>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+
